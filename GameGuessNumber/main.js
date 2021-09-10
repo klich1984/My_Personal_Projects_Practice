@@ -39,12 +39,12 @@ const btn = $d.querySelector('.submit-btn'),
   labelLowHi = $d.querySelector('.msj-low-hi'),
   labelParam = $d.querySelector('.resultParas')
 
-elementNumber.focus()
 
 // console.log(numberRandom)
 
 // event onclick label input submit
 const getNumberInput = () => {
+  elementNumber.focus()
   let inputValue = $d.getElementById('capturedNumber').value
 
   if (attempts < 10) {
