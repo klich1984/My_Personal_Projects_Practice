@@ -1,17 +1,71 @@
+/* ****** Reset ****** */
+html {
+	box-sizing: border-box;
+	font-family: var(--font);
+	font-size: 16px;
+	/* Trancistion with css */
+	scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 2rem auto;
+	min-width: 360px;
+	max-width: 600px;
+	height: 100vh;
+	/* avoid scroll bar */
+	overflow-x: hidden;
+	background-color: #ccc;
+}
+
+h1 {
+	margin: 0;
+}
 
 /* Disable the arrows of the inputs numbers */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-    }
-input[type=number] { -moz-appearance:textfield; }
-
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type='number'] {
+	-moz-appearance: textfield;
+}
 
 
 .container {
-    width: 500px;
-    height: auto;
-    text-align: center;
-    margin: auto;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin: auto;
+}
+
+.form,
+.resultParas {
+	padding: 1rem;
+}
+
+.resultParas {
+	padding-top: 0;
+}
+
+.form label {
+	margin: 1rem;
+}
+
+.form input {
+	margin: 0.5rem 1rem;
+}
+
+.resultParas p:nth-child(2) {
+	margin: 1rem 4rem;
+}
+
+.resultParas p:nth-child(1) {
+	margin-top: 0;
 }
