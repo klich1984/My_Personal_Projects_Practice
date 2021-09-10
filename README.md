@@ -14,7 +14,7 @@
 
 You can watch and play here
 
-- [Play now](https://klich1984.github.io/My_personal_Projects_practice/GamesGuessNumber/index.html)
+- [Play now](https://klich1984.github.io/My_Personal_Projects_Practice/GameGuessNumber/)
 
 Technologies used:
 - HTML, CSS, Javascript
