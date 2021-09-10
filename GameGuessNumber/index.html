@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Adivina el numero</title>
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<section class="container">
+			<h1>Adivina Un Número</h1>
+			<p>
+				Hemos seleccionado un número aleatorio entre 1 y 100. Fíjate si lo
+				puedes adivinar en 10 turnos o menos. Vamos a decirte si tu número es
+				más alto o más bajo.
+			</p>
+			<div class="form">
+				<label for="capturedNumber">Adivina el número: </label>
+				<input
+					type="number"
+					id="capturedNumber"
+					class="capturedNumber"
+					onkeydown="if (event.keyCode == 13)
+						document.getElementById('btnSearch').click()"
+				/>
+				<input
+					type="submit"
+					onclick="getNumberInput()"
+					value="Enviar Respuesta"
+					class="submit-btn"
+					id="btnSearch"
+				/>
+			</div>
+			<div class="resultParas">
+				<p class="attem-pts"></p>
+				<p class="msj-inform"></p>
+				<p class="msj-low-hi"></p>
+			</div>
+		</section>
+		<script src="./main.js"></script>
+	</body>
+</html>

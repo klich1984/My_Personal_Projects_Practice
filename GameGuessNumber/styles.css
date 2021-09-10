@@ -1,0 +1,17 @@
+
+/* Disable the arrows of the inputs numbers */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+
+
+.container {
+    width: 500px;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
