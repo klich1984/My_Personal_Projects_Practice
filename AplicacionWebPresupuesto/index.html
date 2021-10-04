@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>APP Presupuesto</title>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body onload="chargeApp()">
+		<header>
+			<div class="estimate">
+				<h2 class="title-entry">Presupuesto Disponible</h2>
+				<p id="budget">+ 2,000.00</p>
+				<div class="entry-estimate clean-style">
+					<div class="text-entry-estimate">Ingresos</div>
+					<div class="right">
+						<div class="value-entry-estimate" id="income">+4,000.00</div>
+						<div class="percentage-entry-estimate"></div>
+					</div>
+				</div>
+				<div class="egress-estimate clean-style">
+					<div class="text-egress-estimate">Egresos</div>
+					<div class="right clean-style">
+						<div class="value-egress-estimate" id="expenses">- 1,900.00</div>
+						<div class="percentage-egress-estimate" id="percentage">45%</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- add values
+			Para evitar el envio del formulario y solo se procese el metodo onclick agregamos onsubmit="return false" en la etiqueta form -->
+		<form id="form" onsubmit="return false">
+			<section class="add">
+				<article class="add-container">
+					<select id="type" class="add-type">
+						<option value="income" select>Ingreso</option>
+						<option value="expense">Egreso</option>
+					</select>
+					<input
+						type="text"
+						class="add-description"
+						id="description"
+						placeholder="Agrega Descripción"
+					/>
+					<!-- step='any' = para aceptar decimales  -->
+					<input
+						type="number"
+						class="add-value"
+						id="value"
+						placeholder="Valor"
+						step="any"
+					/>
+					<button class="add-btn" onclick="addData()">
+						<ion-icon name="checkmark-circle-outline"></ion-icon>
+					</button>
+				</article>
+			</section>
+		</form>
+		<!-- Section income and expense -->
+		<section class="container clean-style">
+			<article class="income">
+				<h2 class="title-income">Ingresos</h2>
+				<div id="income-list">
+					<!-- <div class="element clean-style">
+						<div class="description-element">Salario</div>
+						<div class="right clean-style">
+							<div class="value-element">+ 2,200.00</div>
+							<div class="delete-element">
+								<button class="btn-delete-element">
+									<ion-icon name="close-circle-outline"></ion-icon>
+								</button>
+							</div>
+						</div>
+					</div> -->
+					<!-- <div class="element clean-style">
+						<div class="description-element">Salario</div>
+						<div class="right clean-style">
+							<div class="value-element">+ 2,200.00</div>
+							<div class="delete-element">
+								<button class="btn-delete-element">
+									<ion-icon name="close-circle-outline"></ion-icon>
+								</button>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</article>
+			<!-- Egresos -->
+			<article class="expenses">
+				<h2 class="title-expenses">Egresos</h2>
+				<div id="expenses-list">
+					<!-- <div class="element clean-style">
+						<div class="description-element">Renta departamento</div>
+						<div class="right clean-style">
+							<div class="value-element">- 900.00</div>
+							<div class="percentage-element">21%</div>
+							<div class="delete-element">
+								<button class="btn-delete-element">
+									<ion-icon name="close-circle-outline"></ion-icon>
+								</button>
+							</div>
+						</div>
+					</div> -->
+					<!-- <div class="element clean-style">
+						<div class="description-element">Renta departamento</div>
+						<div class="right clean-style">
+							<div class="value-element">- 900.00</div>
+							<div class="percentage-element">21%</div>
+							<div class="delete-element">
+								<button class="btn-delete-element">
+									<ion-icon name="close-circle-outline"
+										onclick="deleteIncome()"></ion-icon>
+								</button>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</article>
+		</section>
+		<script src="js/Dato.js"></script>
+		<script src="js/Ingreso.js"></script>
+		<script src="js/Egreso.js"></script>
+		<script src="js/app.js"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+	</body>
+</html>
