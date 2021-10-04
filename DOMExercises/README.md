@@ -6,16 +6,16 @@ Landin Page created with html, css and javascript to practice the concepts learn
 
 ## files
 
-- [HTML](/index.html)
-- [CSS](/css/dom-ejercicios.css)
-- [JavaScript](/js/)
+- [HTML](./index.html)
+- [CSS](./css/dom-ejercicios.css)
+- [JavaScript](./js/)
 
 
 ### Hamburger menu
 
 - Description: Hamburger-type menu using the page icon as a reference the site of [Jonathan Suh](https://jonsuh.com/hamburgers/) And through css, html and javascript a menu is displayed that will direct us to the different sections of our landig page.
 
-- [Code](/js/dom/menu_hamburguesa.js)
+- [Code](./js/dom/menu_hamburguesa.js)
 
 
 
