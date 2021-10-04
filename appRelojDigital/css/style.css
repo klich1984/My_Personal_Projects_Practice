@@ -1,0 +1,35 @@
+body {
+	background-color: darkgrey;
+}
+
+h1 {
+	text-align: center;
+	color: darkblue;
+	font-size: 1em;
+}
+#watch {
+	font-family: sans-serif;
+	font-size: 60px;
+	text-shadow: 0 0 1px #333;
+	color: whitesmoke;
+}
+
+.watch-container {
+	background-color: rgb(12, 119, 206);
+	padding: 25px;
+	max-width: 350px;
+	text-align: center;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#date {
+	margin-top: 10px;
+	letter-spacing: 10px;
+	font-size: 16px;
+}
+
+.effect {
+	border: rgb(0, 0, 0) 2px solid;
+}
