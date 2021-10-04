@@ -1,0 +1,92 @@
+:root {
+	--first-color: #2196f3;
+	--second-color: #009688;
+	--white-color: #fff;
+	--blue-color: #3f51b5;
+	--p-color: #00204a;
+	--button-background: #3f51b5;
+	--gray-color: grey;
+}
+
+html {
+	background-color: var(--first-color);
+	height: 100vh;
+	font-family: Helvetica, sans-serif;
+	background: url(../img/fondo.png), var(--first-color);
+	background: url(../img/fondo.png), -webkit-gradient(linear, right top, left top, from(--first-color), to(--second-color));
+	background: url(../img/fondo.png), linear-gradient(to left, var(--first-color), var(--second-color));
+}
+
+h1 {
+	color: var(--white-color);
+	padding: 10px;
+}
+
+button {
+	min-height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	border-color: transparent;
+	background-color: var(--blue-color);
+	color: var(--white-color);
+	font-size: 30px;
+	border-width: 0;
+}
+
+form {
+	text-align: center;
+	margin: 20px;
+}
+
+#header {
+	background-color: var(--blue-color);
+	text-align: center;
+}
+
+.container {
+	max-width: 400px;
+	margin: 50px auto;
+	background: var(--white-color);
+	border-radius: 5px;
+	box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 3);
+}
+
+.element {
+	min-height: 70px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+.element:last-child {
+	border-bottom: 0;
+}
+
+.div-btn {
+	text-align: center;
+}
+
+.div-btn button {
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+input[type='text'] {
+	text-align: center;
+	height: 60px;
+	top: 10px;
+	border: none;
+	background: transparent;
+	font-weight: 700;
+	width: 40%;
+}
+
+input[type='text']:focus {
+	outline: none;
+	box-shadow: inset 0 -3px 0 0 var(--button-background);
+}
+
+::placeholder {
+	color: var(--blue-color);
+	opacity: 0.5;
+}
