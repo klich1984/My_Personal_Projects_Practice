@@ -1,4 +1,4 @@
-# Projects persona
+# Projects personal
 
 ## creation of personal projects to practice concepts and languages learned
 
