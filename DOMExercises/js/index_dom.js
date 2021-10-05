@@ -12,6 +12,7 @@ $d.addEventListener('DOMContentLoaded', e => {
   digitalWatch()
   alarm('assets/alarma.mp3', '#star-alarm', '#stop-alarm')
   countDown('countdown', 'Sep 03, 2022 01:00:00', 'Feliz Cumpleaños pasala super y rcuerda que ¡Te estas volviendo viejooo...! 👽')
+  scrollTopButton('.scroll-top-btn')
 })
 
 /*
