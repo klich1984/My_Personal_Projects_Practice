@@ -59,7 +59,7 @@ h1 {
 	text-align: center;
 }
 
-/* Menu Hamburguesa */
+/* **********Menu Hamburguesa********** */
 .panel-btn {
 	position: fixed;
 	z-index: 999;
@@ -127,4 +127,19 @@ h1 {
 
 #container-watch {
 	margin-bottom: 1rem;
+}
+
+/* **********Eventos del teclado********** */
+.stage {
+	display: flex;
+	min-height: 50vh;
+	background-color: var(--second-color);
+}
+
+.ball {
+	margin: auto;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	background-color: var(--main-color);
 }
