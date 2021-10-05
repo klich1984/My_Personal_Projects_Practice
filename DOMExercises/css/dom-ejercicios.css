@@ -125,3 +125,6 @@ h1 {
 	background-color: var(--main-modal-color);
 }
 
+#container-watch {
+	margin-bottom: 1rem;
+}
