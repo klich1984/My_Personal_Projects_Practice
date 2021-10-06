@@ -4,6 +4,7 @@ import countDown from "./dom/cuenta_regresiva.js"
 import hamburgerMenu from "./dom/menu_hamburguesa.js"
 import { digitalWatch, alarm } from "./dom/reloj_digital.js"
 import { moveBall, shorcuts } from "./dom/teclado.js"
+import darkTheme from "./dom/tema_oscuro.js"
 
 const $d = document
 
@@ -25,3 +26,4 @@ $d.addEventListener('keydown', e => {
   moveBall(e, '.ball', '.stage')
 })
 
+darkTheme('.dark-theme-btn', 'dark-mode')

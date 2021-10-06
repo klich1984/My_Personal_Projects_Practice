@@ -5,8 +5,6 @@ export default function countDown(id, limitDate, finalMsg) {
     // Guardamos la fecha en milisegundos para poder hacer calculos con ella, esta fecha es estatica
     countdowneDate = new Date(limitDate).getTime()
 
-    console.log(new Date())
-
   let countdownTempo = setInterval(() => {
     // console.log(countdowneDate)
     let now = new Date().getTime(),
