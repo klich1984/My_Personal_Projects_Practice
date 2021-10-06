@@ -3,6 +3,7 @@ import scrollTopButton from './dom/boton_scroll.js'
 import countDown from './dom/cuenta_regresiva.js'
 import hamburgerMenu from './dom/menu_hamburguesa.js'
 import responsiveMedia from './dom/objeto_responsive.js'
+import responsiveTester from './dom/prueba_responsive.js'
 import { digitalWatch, alarm } from './dom/reloj_digital.js'
 import { moveBall, shorcuts } from './dom/teclado.js'
 import darkTheme from './dom/tema_oscuro.js'
@@ -32,6 +33,7 @@ $d.addEventListener('DOMContentLoaded', (e) => {
 		`<a href="https://goo.gl/maps/Gi1wS7qGdcmK6m2q6" target="_blank" rel="noopener">Ver Mapa</a>`,
 		`<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126916.74073834557!2d-75.65125209709198!3d6.24419882131964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428dfb80fad05%3A0x42137cfcc7b53b56!2sMedell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1633540981257!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>`
 	)
+  responsiveTester('responsive-tester')
 })
 
 /*
