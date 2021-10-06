@@ -7,7 +7,6 @@ export default function scrollTopButton(btn) {
   // Agregar evento al windows
   $w.addEventListener('scroll', e => {
     // window.pageYOffset y document.documentElement.scrollTop me dan el mismo valor la distancia que ha recorrido la barra de desplazamiento desde el top 0
-    console.log($w.pageYOffset, $d.documentElement.scrollTop)
     let scrollTop = $d.documentElement.scrollTop
 
     if (scrollTop > 700) {

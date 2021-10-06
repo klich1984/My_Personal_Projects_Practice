@@ -87,7 +87,7 @@ h1 {
 	text-align: center;
 	transition: transform 0.3s ease;
 	/* De arriba */
-	transform: translate(0, -100%);
+	transform: translate(0, -500%);
 	/* De abajo */
 	/* transform: translate(0, 100%); */
 	/* De derecha */
