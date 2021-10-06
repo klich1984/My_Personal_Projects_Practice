@@ -1,4 +1,5 @@
 /* Si es necesario el .js de los archivos al importar */
+import scrollTopButton from "./dom/boton_scroll.js"
 import countDown from "./dom/cuenta_regresiva.js"
 import hamburgerMenu from "./dom/menu_hamburguesa.js"
 import { digitalWatch, alarm } from "./dom/reloj_digital.js"
