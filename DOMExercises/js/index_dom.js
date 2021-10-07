@@ -3,6 +3,7 @@ import scrollTopButton from './dom/boton_scroll.js'
 import countDown from './dom/cuenta_regresiva.js'
 import userDeviceInfo from './dom/deteccion _dispositivos.js'
 import networkStatus from './dom/deteccion_red.js'
+import webCam from './dom/deteccion_webcam.js'
 import hamburgerMenu from './dom/menu_hamburguesa.js'
 import responsiveMedia from './dom/objeto_responsive.js'
 import responsiveTester from './dom/prueba_responsive.js'
@@ -37,6 +38,7 @@ $d.addEventListener('DOMContentLoaded', (e) => {
 	)
   responsiveTester('responsive-tester')
   userDeviceInfo('user-device')
+	webCam('web-cam')
 })
 
 /*
