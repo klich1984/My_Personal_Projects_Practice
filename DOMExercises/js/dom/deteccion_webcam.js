@@ -9,10 +9,10 @@ export default function webCam(id) {
 		.then(media => {
       $video.srcObject = media
       $video.play()
-      console.log('media', media)
+      // console.log('media', media)
     })
 		.catch((err) => {
-      console.log('Error', err)
+      // console.log('Error', err)
 			$video.insertAdjacentHTML(
 				'beforebegin',
 				`<div><mark>¡Ups! Ocurrio el siguiente error: ${err}</mark></div>`

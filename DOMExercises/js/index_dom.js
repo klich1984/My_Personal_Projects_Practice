@@ -4,6 +4,7 @@ import countDown from './dom/cuenta_regresiva.js'
 import userDeviceInfo from './dom/deteccion _dispositivos.js'
 import networkStatus from './dom/deteccion_red.js'
 import webCam from './dom/deteccion_webcam.js'
+import search from './dom/filtro_busquedas.js'
 import getGeolocation from './dom/geolocalizacion.js'
 import hamburgerMenu from './dom/menu_hamburguesa.js'
 import responsiveMedia from './dom/objeto_responsive.js'
@@ -41,6 +42,7 @@ $d.addEventListener('DOMContentLoaded', (e) => {
   userDeviceInfo('user-device')
 	webCam('web-cam')
 	getGeolocation('geolocation')
+	search('.card', '.card-filter')
 })
 
 /*
