@@ -44,7 +44,7 @@ $d.addEventListener('DOMContentLoaded', (e) => {
 	webCam('web-cam')
 	getGeolocation('geolocation')
 	search('.card', '.card-filter')
-	sorteoDigital('#start-draw-btn', '.list-draw')
+	sorteoDigital('#start-draw-btn', '.player')
 })
 
 /*

@@ -1,38 +1,19 @@
-const list = [
-    'JavaScript',
-    'PHP',
-    'JAVA',
-    'C',
-    'Python',
-    'Ruby',
-    'Go',
-    'Visual Basic',
-    'Rust',
-    'Perl',
-    'MySQL',
-  ],
-  $d = document
+const $d = document
 
+export default function sorteoDigital(btnDawn, selector) {
 
-export default function sorteoDigital(btnId, listId) {
-  const $list = $d.querySelector(listId),
-    $fragment = $d.createDocumentFragment(),
-    $ul = $d.createElement('ul')
+  function getWinner(selector) {
+    const $list = $d.querySelectorAll(selector),
+      random = Math.floor(Math.random() * $list.length),
+      winner = $list[random].textContent
 
-    list.forEach(el => {
-      const $li = $d.createElement('li')
-      $li.textContent = el
-      $fragment.appendChild($li)
-    })
-    $ul.appendChild($fragment)
-    $list.appendChild($ul)
+    return winner
+  }
 
   $d.addEventListener('click', e => {
-    if (e.target.matches(btnId)) {
-      const randomNumber = Math.floor(Math.random() * list.length)
-      console.log(randomNumber);
-      alert(`El ganador es ${list[randomNumber]}`)
-      // $list.insertAdjacentHTML('beforeend', `<h2>El ganador es: <b>${list[randomNumber]}</b></h2>`)
+    if (e.target.matches(btnDawn)) {
+      const winner = getWinner(selector)
+      alert(`El ganador es: ${winner}`)
     }
   })
 }
