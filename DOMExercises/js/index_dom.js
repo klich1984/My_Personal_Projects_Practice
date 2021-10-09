@@ -1,5 +1,6 @@
 /* Si es necesario el .js de los archivos al importar */
 import scrollTopButton from './dom/boton_scroll.js'
+import slider from './dom/carrusel.js'
 import countDown from './dom/cuenta_regresiva.js'
 import userDeviceInfo from './dom/deteccion _dispositivos.js'
 import networkStatus from './dom/deteccion_red.js'
@@ -45,6 +46,7 @@ $d.addEventListener('DOMContentLoaded', (e) => {
 	getGeolocation('geolocation')
 	search('.card', '.card-filter')
 	sorteoDigital('#start-draw-btn', '.player')
+	slider()
 })
 
 /*
