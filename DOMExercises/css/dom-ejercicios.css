@@ -249,3 +249,8 @@ h1 {
 	opacity: 0;
 	order: 1;
 }
+
+.list-draw {
+	width: 100%;
+	text-align: center;
+}

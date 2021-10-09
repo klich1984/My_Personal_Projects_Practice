@@ -16,7 +16,4 @@ export default function search(cards, input) {
 		}
 	})
 
-	console.log(search)
-	console.log($cards)
-	s
 }

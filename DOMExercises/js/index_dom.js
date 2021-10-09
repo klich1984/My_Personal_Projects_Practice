@@ -10,6 +10,7 @@ import hamburgerMenu from './dom/menu_hamburguesa.js'
 import responsiveMedia from './dom/objeto_responsive.js'
 import responsiveTester from './dom/prueba_responsive.js'
 import { digitalWatch, alarm } from './dom/reloj_digital.js'
+import sorteoDigital from './dom/sorteo_digital.js'
 import { moveBall, shorcuts } from './dom/teclado.js'
 import darkTheme from './dom/tema_oscuro.js'
 
@@ -43,6 +44,7 @@ $d.addEventListener('DOMContentLoaded', (e) => {
 	webCam('web-cam')
 	getGeolocation('geolocation')
 	search('.card', '.card-filter')
+	sorteoDigital('#start-draw-btn', '.list-draw')
 })
 
 /*
