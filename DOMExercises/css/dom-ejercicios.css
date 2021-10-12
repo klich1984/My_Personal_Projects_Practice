@@ -318,3 +318,58 @@ h1 {
 	background-color: #fff;
 	color: var(--second-color);
 }
+
+@media screen and (min-width: 992px) {
+	body {
+		display: grid;
+		grid-template-rows: 4rem auto;
+		grid-template-columns: 70% 30%;
+		grid-template-areas:
+			"header header"
+			"main   panel";
+	}
+
+	.header {
+		grid-area: header;
+	}
+
+	main {
+		grid-area: main;
+	}
+
+	.panel {
+		grid-area: panel;
+		align-self: start;
+		position: sticky;
+		top: 4rem;
+		justify-content: flex-start;
+		background-color: var(--second-color);
+		transform: translate(0, 0);
+	}
+
+	.panel-btn  {
+		display: none;
+	}
+
+	.scroll-top-btn {
+		right: initial;
+		left: calc(4.25rem + 1vw);
+	}
+
+	.menu {
+		justify-content: start;
+		text-align: right;
+	}
+
+	.menu a {
+		font-size: 1.25rem;
+		padding: 0.75rem;
+	}
+
+	.menu a:hover,
+	.menu a.active {
+		color: var(--second-color);
+		background-color: var(--main-color);
+	}
+
+}
