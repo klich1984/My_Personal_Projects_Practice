@@ -319,6 +319,11 @@ h1 {
 	color: var(--second-color);
 }
 
+.video-intelligent,
+#video-intelligent {
+	width: 90%;
+}
+
 @media screen and (min-width: 992px) {
 	body {
 		display: grid;
